@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="https:///use.fontawesome.com/releases/v5.15.3/css/all.css" >
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Rampart+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
+
+
+
+<link rel="stylesheet" href="Styles.css">
+<link rel="stylesheet" href="Jquery/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.css">
+<link rel="stylesheet" href="Jquery/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.structure.css">
+
+<link rel="stylesheet" href="Jquery/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.theme.css">
+
+
+</head>
+
+
+<body>
+    <div class="stickyheader">
+        <div class="header  h-14  bg-gray-900 flex  items-center justify-around">
+       
+            <div class="hamburger">
+                <div>
+                </div>
+                <div>
+                </div>
+                <div>
+                </div>
+            </div>
+    
+    
+                <h1 class="text-3xl font-bold text-white tracking-wider">
+                   <span class="text-yellow-400">T</span>RAVEL</h1>
+                   
+                       <ul class="nav-links flex justify-around items-center  font-sans text-xl">
+                           <li>
+                               <a href="#home" class="text-white hover:text-yellow-400" onclick="scroll(home)" >Home</a>
+                           </li>
+                           <li>
+                            <a href="#book" class="text-white hover:text-yellow-400" 
+                            onclick="scroll(book)">Books</a>
+                        </li>
+                        <li>
+                            <a href="#packages" class="text-white hover:text-yellow-400" onclick="scroll(packages)">Packages</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="text-white hover:text-yellow-400" onclick="scroll(services)">Services</a>
+                        </li>
+                        <li>
+                            <a href="#gallery" class="text-white hover:text-yellow-400" > <span class="scroll(gallery)"> Gallery</span>
+                              </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-white hover:text-yellow-400">Review</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="text-white hover:text-yellow-400" onclick="scroll(contact)">Contact</a>
+                        </li>
+                       </ul>
+                  <div class="flex items-center justify-center cursor-pointer ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="login h-8 w-8 font-bold text-2xl  text-white mr-2 hover:text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="search-icon h-8 w-8 font-bold text-2xl text-white hover:text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+    
+                  </div>
+           
+                </div>
+
+                
+
+         
+
+             </div>
+             <ul class="navbar flex bg-gray-900 cursor-pointer font-sans text-xl border-t-2 border-gray-700">
+                <li >
+                    <a href="" class="text-white hover:text-yellow-400">Home</a>
+                </li>
+                <li >
+                 <a href="" class="text-white hover:text-yellow-400" onclick="scroll(book)">Books</a>
+             </li>
+             <li >
+                 <a href="" class="text-white hover:text-yellow-400">Packages</a>
+             </li>
+             <li >
+                 <a href="" class="text-white hover:text-yellow-400">Services</a>
+             </li>
+             <li >
+                 <a href="" class="text-white hover:text-yellow-400">Gallery</a>
+             </li>
+             <li >
+                 <a href="" class="text-white hover:text-yellow-400">Review</a>
+             </li>
+             <li >
+                 <a href="" class="text-white hover:text-yellow-400">Contact</a>
+             </li>
+            </ul>
+
+             <div class="textbar flex items-center   bg-gray-900 h-14  border-t-2 border-gray-700 text-lg justify-around ">
+                <input type="text" class="searchbar  w-11/12 h-10 rounded    p-2 " placeholder="Search here ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon h-8 w-8 font-bold cursor-pointer text-2xl text-white hover:text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+               </svg>
+
+     </div>
+             <!-- view port related -->
+             <div class="bg-modal">
+                
+                <div class="login-signup rounded bg-gray-100">
+                 <div class="close text-white ">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 cursor-pointer " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                       </svg>
+                  </div>
+             <div class="p-4"> 
+               <div class="flex text-2xl text-gray-700items-center justify-center" >
+                   <h3 class="mr-2">LOGIN</h3>
+               </div> 
+               <div class="inputs mt-3">
+                   <input type="text" placeholder="email" class="w-full border-2 border-gray-300 pl-2 p-1 capitalize">
+                   <input type="password" placeholder="password" class="w-full border-2 border-gray-300 pl-2 p-1 mt-3 capitalize">
+               </div> 
+
+               <div class="login-button w-full bg-yellow-400 text-white flex items-center justify-center p-2 mt-3 cursor-pointer
+               border-2 border-yellow-400 hover:bg-gray-100
+               hover:text-yellow-400"
+               >
+                   Login Now
+
+               </div>
+
+               <input type="checkbox" id="rememberme"  class="mt-3  cursor-pointer">
+                <label for="rememberme" class="text-sm font-sans">
+                    Remember Me
+                </label>
+
+                <div class="forgetpassword mt-4">
+                    <h3 class="text-gray-500">Forget Password? <a href="#" class="text-yellow-400">Click Here</a></h3>
+                </div>
+                <div class="registernow  mt-2">
+                    <h3 class="text-gray-500">Don't Have An Account <a href="#" class="text-yellow-400">Register Now</a></h3>
+                </div>
+                  
+             </div>
+           
+         </div> 
+         </div> 
+   
+    
+    <section class="home" id="home">
+        <video  autoplay muted loop class="video"   id="videos">
+            <source id="source-video" 
+            src="./videos/vid-2.mp4" type="video/mp4"/>
+        </video>
+    
+        
+   
+
+            
+            
+
+            <div class="mid-section  ">
+                
+                <h1 class="adventure uppercase tracking-wide text-white text-6xl mb-3 ">Adventure is worthwhile</h1>
+                 <h3 class="discover text-white capitalize  text-3xl mb-2">Discover New Places with us, adventure awaits</h3>
+
+                 <div class="discover-more text-xl bg-yellow-400   h-12 w-40 text-white flex justify-center items-center rounded  p-2 cursor-pointer hover:bg-transparent hover:text-yellow-400
+                 border-2
+                 border-yellow-400">
+                     Discover More
+                 </div>
+
+                 <div class="select-button my-4 flex cursor-pointer text-white  bg-gray-300 h-10 w-40 items-center justify-evenly rounded-full ">
+                    <i class="fas fa-circle  hover:text-yellow-400" onclick="changebg(1)" ></i>
+                    <i class="fas fa-circle  hover:text-yellow-400"  
+                    onclick="changebg(2)"></i>
+                    <i class="fas fa-circle  hover:text-yellow-400"
+                    onclick="changebg(3)"></i>
+                    <i class="fas fa-circle  hover:text-yellow-400"
+                    onclick="changebg(4)"></i>
+                    <i class="fas fa-circle  hover:text-yellow-400"
+                    onclick="changebg(5)"></i>
+                 </div>
+
+            </div>
+
+
+            
+
+             
+
+            
+    
+</section>
+
+
+  <section class="book  border-yellow-700" id="book">
+     
+      <div class="book-header flex   items-center justify-center">
+              <h1 class=" px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg mr-1">B</h1>
+              <h1 class=" px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg mr-1">O</h1>
+              <h1 class=" px-1  font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg mr-1">O</h1> 
+              <h1 class=" px-1  font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg mr-3">K</h1>
+              <h1 class=" px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg mr-1">N</h1>
+              <h1 class=" px-1  font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg mr-1">O</h1>
+              <h1 class=" px-1  font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg mr-1">W</h1>
+      </div>
+
+      <div class="book-main-section  ">
+          <div class="book-image  ">
+                   <img src="./videos/book-img.svg" alt="" class="image ">
+          </div>
+          <div class="form  flex justify-center items-center ">
+            <form action="" class="booking-form p-5 rounded-lg shadow-2xl ">
+                <label for="whereTo">Where To</label>
+                <input type="text" id ="whereTo"class="w-full border-2 border-gray-100 p-1 my-2" placeholder="search places">
+                 <label for="howmany" >Number Of Guestes</label>
+                 <input type="text" class="w-full border-2 border-gray-100 p-1 my-2" placeholder="number of guests " id="howmany">
+                 <label for="arrival">Arrivals</label>
+                 <div class="arrivals border  flex border-2 border-gray-100 p-1 my-2 justify-between" >
+                     <input type="text"
+                     placeholder="dd/mm/yyyy" id="arrival"  >
+                   <span id="arrival-icon">  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                      </svg></span>
+
+                 </div>
+                 <label for="leaving">Leaving</label>
+                 <div class="leaving border flex border-2 border-gray-100 p-1 my-2 justify-between" >
+                     <input type="text" placeholder="dd/mm/yyyy">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 cursor-pointer" id="leaving"viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                      </svg>
+
+                 </div>
+
+            </form>
+          </div>
+      </div>
+     
+  </section>
+
+    <section class="packages" id="packages"> 
+   <div class="packages-header  display flex justify-center items-center">
+        <h1 >
+
+            <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">P</span>
+            <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">A</span>
+            <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">C</span>
+            <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">K</span>
+            <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">A</span>
+            <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg">G</span>
+            <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">E</span>
+            <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">S</span>
+
+        </h1>
+
+    </div>
+
+        <div class="places flex flex-wrap mt-4">
+            <div class="Mumbai  mt-2 rounded-lg  shadow-lg">
+                <img src="./videos/p-1.jpg" alt="" class="h-56 w-72 rounded-t-lg ">
+                <div class="places-details p-2">
+                <div class="place-name ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                      </svg>
+                      <h3 class="place-name-tag ">Mumbai</h3>
+                </div>
+                <div class="description flex flex-wrap w-64 pl-1">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit eum qui, 
+                </div>
+                <div class="ratings flex text-yellow-400 pl-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                      </svg>
+                </div>
+                <div class="price flex pl-1">
+                  <h1 class="text-xl">$90.00</h1>
+                  <h6 class="text-sm flex items-center text-gray-600"><strike>$120</strike></h6>
+                </div>
+
+                <div class="text-xl bg-yellow-400   h-10 w-40 text-white flex items-center  pl-6 rounded  cursor-pointer hover:bg-yellow-300 hover:text-yellow-400
+                border-2
+                border-yellow-400 ml-1">Book Now
+                
+                </div>
+              </div>
+            </div>
+            <div class="Hawai  mt-2 rounded-lg  shadow-lg">
+                <img src="./videos/p-2.jpg" alt="" class="h-56 w-72 rounded-t-lg ">
+                <div class="places-details p-2">
+                <div class="place-name pl-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                      </svg>
+                      <h3 class="place-name-tag ">Hawai</h3>
+                </div>
+                <div class="description flex flex-wrap w-64 pl-1">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit eum qui, 
+                </div>
+                <div class="ratings flex text-yellow-400 pl-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                      </svg>
+                </div>
+                <div class="price flex pl-1">
+                  <h1 class="text-xl">$90.00</h1>
+                  <h6 class="text-sm flex items-center text-gray-600"><strike>$120</strike></h6>
+                </div>
+
+                <div class="text-xl bg-yellow-400   h-10 w-40 text-white flex items-center  pl-6 rounded  cursor-pointer hover:bg-yellow-300 hover:text-yellow-400
+                border-2
+                border-yellow-400 ml-1">Book Now
+                
+                </div>
+               </div>
+            </div>
+            <div class="Sydeny mt-2 rounded-lg  shadow-lg">
+                <img src="./videos/p-3.jpg" alt="" class="h-56 w-72  rounded-t-lg">
+                <div class="places-details p-2">
+                <div class="place-name pl-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                      </svg>
+                      <h3 class="place-name-tag ">Sydney</h3>
+                </div>
+                <div class="description flex flex-wrap w-64 pl-1">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit eum qui, 
+                </div>
+                <div class="ratings flex text-yellow-400 pl-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                      </svg>
+                </div>
+                <div class="price flex pl-1">
+                  <h1 class="text-xl">$90.00</h1>
+                  <h6 class="text-sm flex items-center text-gray-600"><strike>$120</strike></h6>
+                </div>
+
+                <div class="text-xl bg-yellow-400   h-10 w-40 text-white flex items-center  pl-6 rounded  cursor-pointer hover:bg-yellow-300 hover:text-yellow-400
+                border-2
+                border-yellow-400 ml-1">Book Now
+                
+              </div> 
+             </div>
+               
+            </div>
+            <div class="Paris mt-2 rounded-lg  shadow-lg">
+                <img src="./videos/p-4.jpg" alt="" class="h-56 w-72 rounded-t-lg">
+                <div class="places-details p-2">
+                <div class="place-name pl-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                      </svg>
+                      <h3 class="place-name-tag ">Paris</h3>
+                </div>
+                <div class="description flex flex-wrap w-64 pl-1">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit eum qui, 
+                </div>
+                <div class="ratings flex text-yellow-400 pl-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                      </svg>
+                </div>
+                <div class="price flex pl-1">
+                  <h1 class="text-xl">$90.00</h1>
+                  <h6 class="text-sm flex items-center text-gray-600"><strike>$120</strike></h6>
+                </div>
+
+                <div class="text-xl bg-yellow-400   h-10 w-40 text-white flex items-center  pl-6 rounded  cursor-pointer hover:bg-yellow-300 hover:text-yellow-400
+                border-2
+                border-yellow-400 ml-1">Book Now
+                
+                </div>
+               </div>
+            </div>
+            <div class="Tokyo mt-2 rounded-lg  shadow-lg">
+                <img src="./videos/p-5.jpg" alt="" class="h-56 w-72 rounded-t-lg">
+                <div class="places-details p-2">
+                <div class="place-name pl-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                      </svg>
+                      <h3 class="place-name-tag ">Tokyo</h3>
+                </div>
+                <div class="description flex flex-wrap w-64 pl-1">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit eum qui, 
+                </div>
+                <div class="ratings flex text-yellow-400 pl-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                      </svg>
+                </div>
+                <div class="price flex pl-1">
+                  <h1 class="text-xl">$90.00</h1>
+                  <h6 class="text-sm flex items-center text-gray-600"><strike>$120</strike></h6>
+                </div>
+
+                <div class="text-xl bg-yellow-400   h-10 w-40 text-white flex items-center  pl-6 rounded  cursor-pointer hover:bg-yellow-300 hover:text-yellow-400
+                border-2
+                border-yellow-400 ml-1">Book Now
+                
+                </div>
+              </div>
+            </div>
+            <div class="Egypt mt-2 rounded-lg  shadow-lg ">
+                <img src="./videos/p-6.jpg" alt="" class="h-56 w-72 rounded-t-lg">
+                <div class="places-details p-2">
+                <div class="place-name pl-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                      </svg>
+                      <h3 class="place-name-tag ">Egypt</h3>
+                </div>
+                <div class="description flex flex-wrap w-64 pl-1">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit eum qui, 
+                </div>
+                <div class="ratings flex text-yellow-400 pl-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                      </svg>
+                </div>
+                <div class="price flex pl-1">
+                  <h1 class="text-xl">$90.00</h1>
+                  <h6 class="text-sm flex items-center text-gray-600"><strike>$120</strike></h6>
+                </div>
+
+                <div class="text-xl bg-yellow-400   h-10 w-40 text-white flex items-center  pl-6 rounded  cursor-pointer hover:bg-yellow-300 hover:text-yellow-400
+                border-2
+                border-yellow-400 ml-1">Book Now
+                
+                </div>
+               </div>
+            </div>
+        </div>
+
+   
+
+  </section> 
+  
+  <section class="Services" id="services">
+
+    <div class="serivces-header  display flex justify-center items-center mt-10">
+      <h1 >
+
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">S</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">E</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">R</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">V</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">I</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg">C</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">E</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">S</span>
+
+      </h1>
+
+  </div>
+
+  <div class="serivces-maincontent  ">
+    <div class="hotels text-center   hover:shadow-2xl rounded-lg ">
+      <div  >
+      <i class="fas fa-hotel  text-5xl text-yellow-400 "></i>
+    </div>
+         <h1 class="text-3xl font-semibold">Affordable Hotel</h1>
+         <div class="description text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex et quis consequuntur, optio quibusdam corporis, accusantium odio 
+         </div>
+    </div>
+    <div class="foods text-center  hover:shadow-2xl rounded-lg ">
+      <div  >
+      <i class="fas fa-utensils  text-5xl text-yellow-400"></i>
+    </div>
+         <h1 class="text-3xl font-semibold">Foods And Drinks</h1>
+         <div class="description text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex et quis consequuntur, optio quibusdam corporis, accusantium odio 
+         </div>
+    </div>
+    <div class="guide text-center   hover:shadow-2xl rounded-lg">
+      <div  >
+      <i class="fas fa-bullhorn  text-5xl text-yellow-400"></i>
+    </div>
+         <h1 class="text-3xl font-semibold">Safety Guide</h1>
+         <div class="description text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex et quis consequuntur, optio quibusdam corporis, accusantium odio 
+         </div>
+    </div>
+    <div class="world text-center  hover:shadow-2xl rounded-lg ">
+      <div  >
+      <i class="fas fa-globe-asia  text-5xl text-yellow-400"></i>
+    </div>
+         <h1 class="text-3xl font-semibold">Around The World</h1>
+         <div class="description text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex et quis consequuntur, optio quibusdam corporis, accusantium odio 
+         </div>
+    </div>
+    <div class="travel text-center   hover:shadow-2xl rounded-lg">
+      <div  >
+      <i class="fas fa-plane  text-5xl text-yellow-400"></i>
+    </div>
+         <h1 class="text-3xl font-semibold">Fast Travel</h1>
+         <div class="description text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex et quis consequuntur, optio quibusdam corporis, accusantium odio 
+         </div>
+    </div>
+    <div class="Adventure text-center  hover:shadow-2xl rounded-lg">
+      <div  >
+      <i class="fas fa-hiking  text-5xl text-yellow-400"></i>
+    </div>
+         <h1 class="text-3xl font-semibold">Adventure</h1>
+         <div class="description text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex et quis consequuntur, optio quibusdam corporis, accusantium odio 
+         </div>
+    </div>
+    
+  </div>
+       
+  </section>
+  <section class="gallery" id="gallery">
+    <div class="serivces-header  display flex justify-center items-center my-10  ">
+      <h1 >
+
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">G</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">A</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">L</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">L</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">E</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg">R</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">Y</span>
+      </h1>
+
+  </div>
+
+  <div class="gallery-mainsection">
+          <div class="gal1 relative mb-3">
+                     <img src="./videos/g-1.jpg" alt="" class="h-56 w-80 p-2">
+                     <div class="child1 absolute top-0 left-0   h-56 w-80 flex flex-col items-center justify-center ">
+                       <h1 class="text-3xl text-yellow-500">Amazing Places</h1>
+                       <P class="text-white text-center text-base">
+                         Lorem1, ipsum dolor sit amet consectetur adipisicing elit. Doloribus 
+                       </P>
+                        <div class="text-white h-12 w-32  bg-yellow-400 flex items-center justify-center rounded-sm mt-2 cursor-pointer border-2 border-yellow-400 hover:bg-transparent">
+                          See More 
+                        </div>
+
+
+                     </div>
+          </div>
+          <div class="gal1 relative mb-3">
+            <img src="./videos/g-2.jpg" alt="" class="h-56 w-80 p-2">
+            <div class="child1 absolute top-0 left-0   h-56 w-80 flex flex-col items-center justify-center ">
+              <h1 class="text-3xl text-yellow-500">Amazing Places</h1>
+              <P class="text-white text-center text-base">
+                Lorem2, ipsum dolor sit amet consectetur adipisicing elit. Doloribus 
+              </P>
+               <div class="text-white h-12 w-32  bg-yellow-400 flex items-center justify-center rounded-sm mt-2 cursor-pointer border-2 border-yellow-400 hover:bg-transparent">
+                 See More 
+               </div>
+
+
+            </div>
+ </div>
+ <div class="gal1 relative mb-3">
+  <img src="./videos/g-3.jpg" alt="" class="h-56 w-80 p-2">
+  <div class="child1 absolute top-0 left-0   h-56 w-80 flex flex-col items-center justify-center ">
+    <h1 class="text-3xl text-yellow-500">Amazing Places</h1>
+    <P class="text-white text-center text-base">
+      Lorem3, ipsum dolor sit amet consectetur adipisicing elit. Doloribus 
+    </P>
+     <div class="text-white h-12 w-32  bg-yellow-400 flex items-center justify-center rounded-sm mt-2  cursor-pointer border-2 border-yellow-400 hover:bg-transparent">
+       See More 
+     </div>
+
+
+  </div>
+</div>
+<div class="gal1 relative mb-3">
+  <img src="./videos/g-4.jpg" alt="" class="h-56 w-80 p-2">
+  <div class="child1 absolute top-0 left-0   h-56 w-80 flex flex-col items-center justify-center ">
+    <h1 class="text-3xl text-yellow-500">Amazing Places</h1>
+    <P class="text-white text-center text-base">
+      Lorem4, ipsum dolor sit amet consectetur adipisicing elit. Doloribus 
+    </P>
+     <div class="text-white h-12 w-32  bg-yellow-400 flex items-center justify-center rounded-sm mt-2 cursor-pointer border-2 border-yellow-400 hover:bg-transparent">
+       See More 
+     </div>
+
+
+  </div>
+</div>
+<div class="gal1 relative mb-3">
+  <img src="./videos/g-5.jpg" alt="" class="h-56 w-80 p-2">
+  <div class="child1 absolute top-0 left-0   h-56 w-80 flex flex-col items-center justify-center ">
+    <h1 class="text-3xl text-yellow-500">Amazing Places</h1>
+    <P class="text-white text-center text-base">
+      Lorem5, ipsum dolor sit amet consectetur adipisicing elit. Doloribus 
+    </P>
+     <div class="text-white h-12 w-32  bg-yellow-400 flex items-center justify-center rounded-sm mt-2 cursor-pointer border-2 border-yellow-400 hover:bg-transparent">
+       See More 
+     </div>
+
+
+  </div>
+</div>
+<div class="gal1 relative mb-3">
+  <img src="./videos/g-6.jpg" alt="" class="h-56 w-80 p-2">
+  <div class="child1 absolute top-0 left-0   h-56 w-80 flex flex-col items-center justify-center ">
+    <h1 class="text-3xl text-yellow-500">Amazing Places</h1>
+    <P class="text-white text-center text-base">
+      Lorem6, ipsum dolor sit amet consectetur adipisicing elit. Doloribus 
+    </P>
+     <div class="text-white h-12 w-32  bg-yellow-400 flex items-center justify-center rounded-sm mt-2 cursor-pointer border-2 border-yellow-400 hover:bg-transparent">
+       See More 
+     </div>
+
+
+  </div>
+</div>
+<div class="gal1 relative mb-3">
+  <img src="./videos/g-7.jpg" alt="" class="h-56 w-80 p-2">
+  <div class="child1 absolute top-0 left-0   h-56 w-80 flex flex-col items-center justify-center ">
+    <h1 class="text-3xl text-yellow-500">Amazing Places</h1>
+    <P class="text-white text-center text-base">
+      Lorem7, ipsum dolor sit amet consectetur adipisicing elit. Doloribus 
+    </P>
+     <div class="text-white h-12 w-32  bg-yellow-400 flex items-center justify-center rounded-sm mt-2 cursor-pointer border-2 border-yellow-400 hover:bg-transparent">
+       See More 
+     </div>
+
+
+  </div>
+</div>
+<div class="gal1 relative mb-3">
+  <img src="./videos/g-8.jpg" alt="" class="h-56 w-80 p-2">
+  <div class="child1 absolute top-0 left-0   h-56 w-80 flex flex-col items-center justify-center ">
+    <h1 class="text-3xl text-yellow-500">Amazing Places</h1>
+    <P class="text-white text-center text-base">
+      Lorem8, ipsum dolor sit amet consectetur adipisicing elit. Doloribus 
+    </P>
+     <div class="text-white h-12 w-32  bg-yellow-400 flex items-center justify-center rounded-sm mt-2 cursor-pointer border-2 border-yellow-400 hover:bg-transparent">
+       See More 
+     </div>
+
+
+  </div>
+</div>
+<div class="gal1 relative mb-3">
+  <img src="./videos/g-9.jpg" alt="" class="h-56 w-80 p-2">
+  <div class="child1 absolute top-0 left-0   h-56 w-80 flex flex-col items-center justify-center ">
+    <h1 class="text-3xl text-yellow-500">Amazing Places</h1>
+    <P class="text-white text-center text-base">
+      Lorem9, ipsum dolor sit amet consectetur adipisicing elit. Doloribus 
+    </P>
+     <div class="text-white h-12 w-32  bg-yellow-400 flex items-center justify-center rounded-sm mt-2 cursor-pointer border-2 border-yellow-400 hover:bg-transparent">
+       See More 
+     </div>
+
+
+  </div>
+</div>
+  </div>
+  </section>
+  <section class="review ">
+    <div class="serivces-header  display flex justify-center items-center my-10  ">
+      <h1 >
+
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">R</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">E</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">V</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">I</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">E</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg">W</span>
+          
+      </h1>
+    </div>
+
+      <div class="review-maincontent flex px-10 py-2">
+        <div class="reviews shadow-2xl rounded-lg">
+          <div class="review-image">
+               <img src="./videos/pic1.png" alt="" class="rounded-full h-32 w-32 ">
+              </div>
+              <div class="name text-gray-700 mt-1">
+                John Deo
+              </div>
+              <div class="review-desc text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vel, cupiditate architecto error consectetur a pariatur deleniti fugit unde mollitia eos delectus explicabo voluptas nobis? Necessitatibus possimus animi Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat similique sequi aspernatur commodi cumque iure vitae, eaque voluptas nam id quos in. Facilis quasi.
+              </div>
+              <div class="review-ratings flex text-yellow-400 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+        </div>
+        <div class="reviews shadow-2xl rounded-lg">
+          <div class="review-image">
+               <img src="./videos/pic2.png" alt="" class="rounded-full h-32 w-32 ">
+              </div>
+              <div class="name text-gray-700 mt-1">
+                John Deo
+              </div>
+              <div class="review-desc text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vel, cupiditate architecto error consectetur a pariatur deleniti fugit unde mollitia eos delectus explicabo voluptas nobis? Necessitatibus possimus animi Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat similique sequi aspernatur commodi cumque iure vitae, eaque voluptas nam id quos in. Facilis quasi.
+              </div>
+              <div class="review-ratings flex text-yellow-400 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+        </div>
+        <div class="reviews shadow-2xl rounded-lg">
+          <div class="review-image">
+               <img src="./videos/pic3.png" alt="" class="rounded-full h-32 w-32 ">
+              </div>
+              <div class="name text-gray-700 mt-1">
+                John Deo
+              </div>
+              <div class="review-desc text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vel, cupiditate architecto error consectetur a pariatur deleniti fugit unde mollitia eos delectus explicabo voluptas nobis? Necessitatibus possimus animi Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat similique sequi aspernatur commodi cumque iure vitae, eaque voluptas nam id quos in. Facilis quasi.
+              </div>
+              <div class="review-ratings flex text-yellow-400 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+        </div>
+        <div class="reviews shadow-2xl rounded-lg">
+          <div class="review-image">
+               <img src="./videos/pic4.png" alt="" class="rounded-full h-32 w-32 ">
+              </div>
+              <div class="name text-gray-700 mt-1">
+                John Deo
+              </div>
+              <div class="review-desc text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vel, cupiditate architecto error consectetur a pariatur deleniti fugit unde mollitia eos delectus explicabo voluptas nobis? Necessitatibus possimus animi Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat similique sequi aspernatur commodi cumque iure vitae, eaque voluptas nam id quos in. Facilis quasi.
+              </div>
+              <div class="review-ratings flex text-yellow-400 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
+              </div>
+        </div>
+      
+
+  </div>
+  </section>
+   <section class="contact w-full"  id="contact">
+            
+    <div class="contact-header  display flex justify-center items-center my-10  ">
+      <h1 >
+
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">C</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">O</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">N</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">T</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">A</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg">C</span>
+          <span class="px-1 font-semibold text-3xl bg-yellow-100 text-yellow-500 rounded-lg ">T</span>
+      </h1>
+
+  </div>
+     <div class="contact-mainsection flex items-center  justify-evenly">
+       <div class="image  flex items-center justify-center">
+               <img src="./videos/contact-img.svg"  class="contact-image"alt="">
+       </div>
+         <div class="contact-form  ">
+           <form action="
+           #" class="rounded-lg shadow-2xl p-6">
+                 <div class="w-full flex flex-wrap justify-between">
+                <input id="name" type="text"  placeholder="name" class="bg-gray-100 pl-2 rounded-sm text-gray-700 ">
+                <input type="text" placeholder="email" class="bg-gray-100 pl-2 rounded-sm text-gray-700">
+              </div>
+              <div class="w-full flex flex-wrap mt-2 justify-between">
+                <input type="number" placeholder="number" class="bg-gray-100 pl-2 rounded-sm text-gray-700">
+                <input type="text" placeholder="subject" class="bg-gray-100 pl-2 rounded-sm text-gray-700">
+              </div>
+              <div class="w-full mt-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="message" class="bg-gray-100 pl-2 rounded-sm text-gray-700 w-full"></textarea>
+              </div>
+              
+          
+          
+          </form>
+         </div>
+
+     </div>
+
+   
+   </section>
+<section class="movinglogos my-3 ">
+ 
+        <ul class="logo-maincontent">
+          <li><img src="./videos/1.jpg" alt=""></li>
+          <li><img src="./videos/2.jpg" alt=""></li>
+          <li><img src="./videos/3.jpg" alt=""></li>
+          <li><img src="./videos/4.jpg" alt=""></li>
+          <li><img src="./videos/5.jpg" alt=""></li>
+          <li><img src="./videos/6.jpg" alt=""></li>
+          <li><img src="./videos/1.jpg" alt=""></li>
+          <li><img src="./videos/2.jpg" alt=""></li>
+          <li><img src="./videos/3.jpg" alt=""></li>
+          <li><img src="./videos/4.jpg" alt=""></li>
+        </ul>
+  
+</section>
+
+
+
+
+
+  <section class="footer w-full  bg-gray-900 text-white   " id="footer">
+            <div class="footer-mainsection flex  items-strech justify-center  ">
+              <div class="aboutus ml-2 ">
+                <h1 class="mb-3 text-2xl">About Us</h1>
+              <p class="text-sm">  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit beatae recusandae officia ducimus commodi illo explicabo adipisci earum itaque soluta quaerat facilis veritatis dolore repudiandae placeat, minima culpa ut amet.</p>
+              </div>
+              <div class="branchlocations ml-3">
+                   <h1 class="mb-3 text-2xl">Branch Locations</h1>
+                   <ul class="flex-col items-center text-sm">
+                     <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">India</li>
+                     <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">USA</li>
+                     <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">Japan</li>
+                     <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">France</li>
+                   </ul>
+              </div>
+              <div class="quicklinks">
+                <h1 class="mb-3 text-2xl">Quick Links</h1>
+                <ul class="text-sm">
+                  <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">Home</li>
+                  <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">Book</li>
+                  <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">Packages</li>
+                  <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">Services</li>
+                  <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">Gallery</li>
+                  <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">Review</li>
+                  <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">Contact</li>
+                </ul>
+              </div>
+              <div class="followus">
+                <h1 class="mb-3 text-2xl" >Follow Us</h1>
+              
+                <ul class="text-sm">
+                  <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">Facebook</li>
+                  <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">Instagram</li>
+                  <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2"> Twitter</li>
+                  <li class="hover:text-yellow-400 cursor-pointer hover:underline mb-2">LinkedIn</li>
+                </ul>
+              </div>
+              
+            </div>
+  </section>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script> -->
+<script src="Jquery/jquery.js"></script>
+<script src="Jquery/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.js"></script>
+
+<script src="script.js">
+
+</script>
+
+    
+</body>
+</html>

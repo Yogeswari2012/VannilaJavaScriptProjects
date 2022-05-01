@@ -1,0 +1,571 @@
+*
+{
+   box-sizing: border-box;
+}
+
+
+
+.nav-links
+{
+    width:50%;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+body{
+    position:relative;
+}
+.home
+{
+    position:relative;
+    height:100vh;
+    width:100%;
+    /* overflow: hidden; */
+}
+
+.stickyheader
+{
+    position:sticky;
+    position: -webkit-sticky;
+    top:0;
+    z-index:1;
+}
+.video
+{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+
+}
+
+.mid-section
+{
+    display: flex;
+    flex-direction: column;
+   text-align:center;
+    
+     /* text-align:center;
+   margin-top:15%;  */
+    width:75%;
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%) ;
+   z-index:0;
+  
+}
+.discover-more
+{
+    text-align:center;
+    margin: 0 auto;
+    margin-top:1rem;
+}
+
+.select-button
+{
+    text-align:center;
+    margin: 0 auto;
+    margin-top:3.5rem;
+
+}
+
+.navbar
+{
+    /* display:flex; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:45%;
+    
+
+
+}
+.navbar {
+    padding-left:20px;
+    padding-right: 20px;
+    position:fixed;
+    width:100%;
+    z-index:1;
+    display:none;
+   
+   
+}
+.navbar li{
+/* border: solid rgb(87, 86, 86)  2px; */
+padding-left:10px;
+/* transition:padding 2s; */
+
+}
+/* .navbar li:hover{
+    padding-left:13px;
+} */
+
+/* .searchbar
+{
+    margin-left:9px;
+    margin-right:10px;
+    margin-top:6px;
+    width:99%;
+   
+} */
+.textbar
+{
+    width:100%;
+    position:fixed;
+    display:none;
+     z-index:1;
+} 
+
+
+
+input:focus{
+    outline:none
+}
+
+.bg-modal
+{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.7);
+    position:fixed;
+    top:0px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transition: display 10s;
+  display: none;
+  z-index:1;
+}
+
+.login-signup
+{
+    /* background-color: white; */
+    width:30%;
+  
+}
+.close
+{
+    position:absolute;
+    top:30px;
+    right:40px;
+    
+
+}
+
+
+.hamburger div
+{
+    height:6px;
+    width:30px;
+    background-color: white;
+    margin-top:2px;
+    cursor: pointer;
+    /* display:none; */
+}
+
+.hamburger{
+    display:none;
+}
+
+
+.book
+{
+    height:100vh;
+    width:100%;
+   
+}
+.book-header
+{
+    height:10%;
+}
+.book-main-section
+{
+    display:flex;
+    height:90%;
+
+}
+ .book-image, .form
+ {
+    width:50%;
+    height:90%;
+    display:flex;
+    justify-content: center;
+   
+    /* background-image: url('./videos/book-img.svg');
+    background-repeat: no-repeat;
+    background-position:left bottom; */
+} 
+
+.image{
+         height:100%;
+        max-width:100%;
+        
+}
+.booking-form
+{
+    width:70%;
+}
+/* .book-header
+{
+    position:relative;
+    top:0;
+    left:0;
+} */
+
+.packages
+{
+    width:100%;
+   
+  
+   
+}
+.place-name
+{
+    display:flex;
+}
+.places
+{
+    
+    margin:10px auto;
+    width:80%;
+    justify-content: space-evenly;
+}
+   
+.services
+{
+    
+    width:100%;
+}
+.serivces-maincontent
+{
+    display:flex;
+    margin:0 auto;
+    flex-wrap: wrap;
+     width:80%;
+     align-items:center;
+     justify-content: space-evenly;
+   
+}
+.hotels,.foods,.guide,.world,.travel,.Adventure
+{
+    display: flex;
+    flex-direction: column;
+  flex-basis:18rem;
+  align-self: normal;
+  margin-top: 25px;
+  padding:10px;
+}
+.hotels,.foods,.guide,.world,.travel,.Adventure:hover
+{
+    
+  box-shadow: 20px;
+}
+.gallery-mainsection
+{
+   display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width:75%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.child1
+{
+    background-color: rgba(0,0,0,0.7);
+       display: none;
+}
+
+.contact-image
+{
+    width:30rem;
+    height:25rem;
+}
+textarea{
+    resize:none;
+    
+}
+textarea:focus
+{
+    outline: none;
+}
+.contact-form
+{
+    width:35rem;
+}
+.contact-form input{
+    width:48%;
+    height:2rem;
+}
+.footer-mainsection div
+{
+        width:16rem;
+        
+}
+.movinglogos
+{
+    height:20vh;
+    width:80vw;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-color: whitesmoke; */
+}
+.logo-maincontent
+{
+    display: flex;
+    padding: 10px;
+    list-style-type: none;
+    height: 100%;
+   
+    animation-name:scrolling;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.logo-maincontent li
+{
+      
+       width:20vw;
+       flex-shrink: 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+}
+.review-maincontent
+{
+    /* background-color: wheat; */
+    width:80vw;
+    margin: 0 auto;
+   
+    overflow-x:auto;
+  
+    
+}
+.review-maincontent::-webkit-scrollbar
+{
+    width:0;
+}
+.reviews
+{
+    width:20vw;   
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /* border:2px solid green; */
+   padding: 10px;
+   flex-shrink: 0;
+   margin: 0 10px;
+}
+.reviews .name 
+{
+     font-size: 1.5rem;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     letter-spacing: 0;
+}
+
+.reviews .review-desc
+{
+    font-size: 1rem;
+    
+}
+
+@keyframes scrolling
+{
+    from{transform:translate(0vw)}
+    to{transform:translate(-120vw)}
+}
+
+@media screen and (max-width:1300px)
+{
+    .login-signup
+    {
+        width:40%;
+    }
+    
+}
+@media screen and (max-width:1200px)
+{
+    .contact-form
+{
+    width:32rem;
+}
+}
+
+@media screen and (max-width:1110px)
+{
+    .nav-links
+    {
+        width:60%;
+    }
+    .login-signup
+    {
+        width:45%;
+    }
+     .adventure{
+         font-size:3.5rem;
+     }
+}
+@media screen and (max-width:1050px)
+{
+    .adventure{
+        font-size:3.3rem;
+    }
+}
+@media screen and (max-width:980px)
+{
+    .adventure{
+        font-size:3rem;
+    }
+}
+@media screen and (max-width:900px)
+{
+    .nav-links{
+        width:70%;
+    }
+    .login-signup
+    {
+        width:50%;
+    }
+    .adventure{
+        font-size:2.8rem;
+    }
+    .discover{
+        font-size:2rem;
+    }
+    .booking-form{
+        width:80%;
+    }
+    .contact-form
+    {
+        width:28rem;
+    }
+    .contact-mainsection
+    {
+        display:flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:840px)
+{
+    .adventure{
+        font-size:2.5rem;
+    }
+    .discover{
+        font-size:1.8rem;
+    }
+    .places{
+        width:90%;
+    }
+    .serivces-maincontent,.gallery-mainsection
+    {
+        width:90%;
+    }
+    
+}
+
+@media screen and (max-width:750px)
+{
+        .nav-links
+        {
+            display:none;
+        }
+        .hamburger{
+            display:block;
+        }
+
+        .login-signup
+        {
+            width:50%;
+        }
+        .book-main-section{
+            display:flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            
+        }
+        .book-header{
+            height:8%;
+        }
+        .form,.book-image
+        {
+            height:45%;
+            width:100%;
+           
+        }
+        .image {
+              object-fit:inherit;
+        }
+}
+
+@media screen and (max-width:735px)
+{
+    .adventure{
+        font-size:2.3rem;
+    }
+}
+
+@media screen and (max-width:730px)
+{
+    .login-signup
+    {
+        width:60%;
+    }
+    .adventure
+    {
+        font-size: 2.3rem;
+    }
+    .discover{
+           font-size:1.5rem;
+    }
+}
+
+@media screen and (max-width:680px)
+{
+    .login-signup
+    {
+        width:70%;
+    }
+    .adventure
+    {
+        font-size: 2rem;
+    }
+    .discover{
+           font-size:1.3rem;
+    }
+    
+}
+
+@media screen and (max-width:590px)
+{
+    .adventure{
+        font-size:1.8rem;
+    }
+    .discover{
+        font-size:1.5rem;
+    }
+    .contact-form
+    {
+        width:28rem;
+        padding-left:10px;
+    }
+    .contact-form input{
+        
+        width:100%;
+        margin-top: 10px;
+        height:2rem;
+    }
+    .footer-mainsection{
+        display:flex;
+       flex-direction: column;
+       padding-left: 10px;
+       
+    }
+    .footer-mainsection div
+{
+        margin-bottom: 20px;
+        margin-left: 0;
+        
+}
+}
